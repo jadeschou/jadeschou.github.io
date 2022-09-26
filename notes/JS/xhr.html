@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ajax 和 jsonp ？ | JadeBlog</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="这是我的第一个 VuePress 站点">
+    
+    <link rel="preload" href="/assets/css/0.styles.9825735b.css" as="style"><link rel="preload" href="/assets/js/app.d11e3cee.js" as="script"><link rel="preload" href="/assets/js/2.15dfde48.js" as="script"><link rel="preload" href="/assets/js/34.9e053790.js" as="script"><link rel="prefetch" href="/assets/js/10.1d6542d0.js"><link rel="prefetch" href="/assets/js/100.69c90d5b.js"><link rel="prefetch" href="/assets/js/101.80a1d206.js"><link rel="prefetch" href="/assets/js/102.39b57a31.js"><link rel="prefetch" href="/assets/js/103.f7c75e3a.js"><link rel="prefetch" href="/assets/js/104.b04e0e89.js"><link rel="prefetch" href="/assets/js/105.fdacd3c8.js"><link rel="prefetch" href="/assets/js/106.d37cb95e.js"><link rel="prefetch" href="/assets/js/107.34a0f5fd.js"><link rel="prefetch" href="/assets/js/108.89d967be.js"><link rel="prefetch" href="/assets/js/109.b5d4a332.js"><link rel="prefetch" href="/assets/js/11.8d74eaad.js"><link rel="prefetch" href="/assets/js/110.c1448e06.js"><link rel="prefetch" href="/assets/js/111.15daae95.js"><link rel="prefetch" href="/assets/js/112.8338d61d.js"><link rel="prefetch" href="/assets/js/113.ab08ae6f.js"><link rel="prefetch" href="/assets/js/114.e14d8abc.js"><link rel="prefetch" href="/assets/js/115.869e2c33.js"><link rel="prefetch" href="/assets/js/116.7e8559ae.js"><link rel="prefetch" href="/assets/js/117.7d3c511c.js"><link rel="prefetch" href="/assets/js/118.9b1240f7.js"><link rel="prefetch" href="/assets/js/119.2b127730.js"><link rel="prefetch" href="/assets/js/12.16b1daa2.js"><link rel="prefetch" href="/assets/js/120.87f58f0c.js"><link rel="prefetch" href="/assets/js/121.70ab9cc8.js"><link rel="prefetch" href="/assets/js/122.cabcfc2a.js"><link rel="prefetch" href="/assets/js/123.541e4943.js"><link rel="prefetch" href="/assets/js/124.f2062a0e.js"><link rel="prefetch" href="/assets/js/125.9e66949d.js"><link rel="prefetch" href="/assets/js/126.6b15c8b9.js"><link rel="prefetch" href="/assets/js/127.6146871d.js"><link rel="prefetch" href="/assets/js/128.e677db4d.js"><link rel="prefetch" href="/assets/js/129.09545436.js"><link rel="prefetch" href="/assets/js/13.0281535b.js"><link rel="prefetch" href="/assets/js/130.9c3abd94.js"><link rel="prefetch" href="/assets/js/131.3064267e.js"><link rel="prefetch" href="/assets/js/132.da532bf7.js"><link rel="prefetch" href="/assets/js/133.30702809.js"><link rel="prefetch" href="/assets/js/134.d9055538.js"><link rel="prefetch" href="/assets/js/135.14a41e74.js"><link rel="prefetch" href="/assets/js/136.32df2b71.js"><link rel="prefetch" href="/assets/js/137.ca50a89a.js"><link rel="prefetch" href="/assets/js/138.8dd073bf.js"><link rel="prefetch" href="/assets/js/139.004c55fd.js"><link rel="prefetch" href="/assets/js/14.bc811607.js"><link rel="prefetch" href="/assets/js/140.8bbac53a.js"><link rel="prefetch" href="/assets/js/141.fe81c4cc.js"><link rel="prefetch" href="/assets/js/142.dc8ae8dd.js"><link rel="prefetch" href="/assets/js/143.c1468060.js"><link rel="prefetch" href="/assets/js/144.3a348c7b.js"><link rel="prefetch" href="/assets/js/145.a25d6bb7.js"><link rel="prefetch" href="/assets/js/146.23fd565d.js"><link rel="prefetch" href="/assets/js/147.fc0983a0.js"><link rel="prefetch" href="/assets/js/148.cd70ec09.js"><link rel="prefetch" href="/assets/js/149.bf6ab5e6.js"><link rel="prefetch" href="/assets/js/15.c983b002.js"><link rel="prefetch" href="/assets/js/150.fa46f15b.js"><link rel="prefetch" href="/assets/js/151.9532788a.js"><link rel="prefetch" href="/assets/js/152.56813666.js"><link rel="prefetch" href="/assets/js/153.be301432.js"><link rel="prefetch" href="/assets/js/154.b071977c.js"><link rel="prefetch" href="/assets/js/155.4a802d60.js"><link rel="prefetch" href="/assets/js/156.61ff06b3.js"><link rel="prefetch" href="/assets/js/157.0bdab47c.js"><link rel="prefetch" href="/assets/js/158.825cafec.js"><link rel="prefetch" href="/assets/js/159.5643a12c.js"><link rel="prefetch" href="/assets/js/16.2f1c3448.js"><link rel="prefetch" href="/assets/js/160.22a89e92.js"><link rel="prefetch" href="/assets/js/161.ca7947b5.js"><link rel="prefetch" href="/assets/js/162.6f04d719.js"><link rel="prefetch" href="/assets/js/163.a95454b7.js"><link rel="prefetch" href="/assets/js/164.642a0c17.js"><link rel="prefetch" href="/assets/js/165.95da23db.js"><link rel="prefetch" href="/assets/js/166.175552e8.js"><link rel="prefetch" href="/assets/js/167.6ac57869.js"><link rel="prefetch" href="/assets/js/168.38747243.js"><link rel="prefetch" href="/assets/js/169.6b443b7f.js"><link rel="prefetch" href="/assets/js/17.bbaba275.js"><link rel="prefetch" href="/assets/js/170.78aebb35.js"><link rel="prefetch" href="/assets/js/171.61b5d111.js"><link rel="prefetch" href="/assets/js/172.b639d0f8.js"><link rel="prefetch" href="/assets/js/173.347a854a.js"><link rel="prefetch" href="/assets/js/174.a2cd1c97.js"><link rel="prefetch" href="/assets/js/175.4bd8cda6.js"><link rel="prefetch" href="/assets/js/176.db373907.js"><link rel="prefetch" href="/assets/js/177.ed85b401.js"><link rel="prefetch" href="/assets/js/178.74c6edea.js"><link rel="prefetch" href="/assets/js/179.2e18a603.js"><link rel="prefetch" href="/assets/js/18.b6762a2b.js"><link rel="prefetch" href="/assets/js/180.a63a43cb.js"><link rel="prefetch" href="/assets/js/181.a048129b.js"><link rel="prefetch" href="/assets/js/182.fdf5077d.js"><link rel="prefetch" href="/assets/js/183.027c2dec.js"><link rel="prefetch" href="/assets/js/184.930c4dcc.js"><link rel="prefetch" href="/assets/js/185.00ed7c41.js"><link rel="prefetch" href="/assets/js/186.0ba1c93f.js"><link rel="prefetch" href="/assets/js/187.7b0d317a.js"><link rel="prefetch" href="/assets/js/19.144c82e3.js"><link rel="prefetch" href="/assets/js/20.e631c2be.js"><link rel="prefetch" href="/assets/js/21.e7099142.js"><link rel="prefetch" href="/assets/js/22.3e9f6c68.js"><link rel="prefetch" href="/assets/js/23.5f3ae9b4.js"><link rel="prefetch" href="/assets/js/24.874cb236.js"><link rel="prefetch" href="/assets/js/25.8ef4dd62.js"><link rel="prefetch" href="/assets/js/26.76453e06.js"><link rel="prefetch" href="/assets/js/27.e7eaf9dc.js"><link rel="prefetch" href="/assets/js/28.ecf261ca.js"><link rel="prefetch" href="/assets/js/29.98863b55.js"><link rel="prefetch" href="/assets/js/3.829dd85b.js"><link rel="prefetch" href="/assets/js/30.8581643d.js"><link rel="prefetch" href="/assets/js/31.31b38b08.js"><link rel="prefetch" href="/assets/js/32.7b3d84e3.js"><link rel="prefetch" href="/assets/js/33.8ac976c5.js"><link rel="prefetch" href="/assets/js/35.782db859.js"><link rel="prefetch" href="/assets/js/36.03b3e63f.js"><link rel="prefetch" href="/assets/js/37.5980d90f.js"><link rel="prefetch" href="/assets/js/38.edd3e45b.js"><link rel="prefetch" href="/assets/js/39.76190893.js"><link rel="prefetch" href="/assets/js/4.a6ff6c73.js"><link rel="prefetch" href="/assets/js/40.c25b6dd0.js"><link rel="prefetch" href="/assets/js/41.061740ef.js"><link rel="prefetch" href="/assets/js/42.e826b333.js"><link rel="prefetch" href="/assets/js/43.f98089ed.js"><link rel="prefetch" href="/assets/js/44.440184ea.js"><link rel="prefetch" href="/assets/js/45.0711ba3e.js"><link rel="prefetch" href="/assets/js/46.9917f242.js"><link rel="prefetch" href="/assets/js/47.d5f2913a.js"><link rel="prefetch" href="/assets/js/48.67769cca.js"><link rel="prefetch" href="/assets/js/49.ef381d2f.js"><link rel="prefetch" href="/assets/js/5.29174b86.js"><link rel="prefetch" href="/assets/js/50.c964b8de.js"><link rel="prefetch" href="/assets/js/51.99e93d0a.js"><link rel="prefetch" href="/assets/js/52.4ccd47d8.js"><link rel="prefetch" href="/assets/js/53.de35c701.js"><link rel="prefetch" href="/assets/js/54.21207a14.js"><link rel="prefetch" href="/assets/js/55.f5360bdb.js"><link rel="prefetch" href="/assets/js/56.ab91f892.js"><link rel="prefetch" href="/assets/js/57.2d4454cd.js"><link rel="prefetch" href="/assets/js/58.8aa1e70d.js"><link rel="prefetch" href="/assets/js/59.5f07be27.js"><link rel="prefetch" href="/assets/js/6.f7be6a44.js"><link rel="prefetch" href="/assets/js/60.ce564487.js"><link rel="prefetch" href="/assets/js/61.998e4cd9.js"><link rel="prefetch" href="/assets/js/62.c8675b48.js"><link rel="prefetch" href="/assets/js/63.29398dac.js"><link rel="prefetch" href="/assets/js/64.e5dcf98b.js"><link rel="prefetch" href="/assets/js/65.fa9740f8.js"><link rel="prefetch" href="/assets/js/66.ae0c77a7.js"><link rel="prefetch" href="/assets/js/67.6bbb781b.js"><link rel="prefetch" href="/assets/js/68.59379074.js"><link rel="prefetch" href="/assets/js/69.f0508b5f.js"><link rel="prefetch" href="/assets/js/7.81423bd2.js"><link rel="prefetch" href="/assets/js/70.854be39d.js"><link rel="prefetch" href="/assets/js/71.5f582047.js"><link rel="prefetch" href="/assets/js/72.9e844147.js"><link rel="prefetch" href="/assets/js/73.6fb90507.js"><link rel="prefetch" href="/assets/js/74.43f51081.js"><link rel="prefetch" href="/assets/js/75.0c6b66ec.js"><link rel="prefetch" href="/assets/js/76.35461a8b.js"><link rel="prefetch" href="/assets/js/77.c7c7cee8.js"><link rel="prefetch" href="/assets/js/78.fe2f2eeb.js"><link rel="prefetch" href="/assets/js/79.8686b15c.js"><link rel="prefetch" href="/assets/js/8.71c1d1cf.js"><link rel="prefetch" href="/assets/js/80.34567803.js"><link rel="prefetch" href="/assets/js/81.ed82025a.js"><link rel="prefetch" href="/assets/js/82.5e180264.js"><link rel="prefetch" href="/assets/js/83.efa725f1.js"><link rel="prefetch" href="/assets/js/84.1748113e.js"><link rel="prefetch" href="/assets/js/85.4c2b3b47.js"><link rel="prefetch" href="/assets/js/86.94f15575.js"><link rel="prefetch" href="/assets/js/87.3f91983f.js"><link rel="prefetch" href="/assets/js/88.c1f41926.js"><link rel="prefetch" href="/assets/js/89.5058325f.js"><link rel="prefetch" href="/assets/js/9.96f83588.js"><link rel="prefetch" href="/assets/js/90.a8109101.js"><link rel="prefetch" href="/assets/js/91.2de3840a.js"><link rel="prefetch" href="/assets/js/92.c4460598.js"><link rel="prefetch" href="/assets/js/93.66619af2.js"><link rel="prefetch" href="/assets/js/94.60c25e02.js"><link rel="prefetch" href="/assets/js/95.2e6d1c32.js"><link rel="prefetch" href="/assets/js/96.63ba1d3d.js"><link rel="prefetch" href="/assets/js/97.f887884b.js"><link rel="prefetch" href="/assets/js/98.3562a0ce.js"><link rel="prefetch" href="/assets/js/99.4f6a7e8b.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.9825735b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">JadeBlog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端学习" class="dropdown-title"><span class="title">前端学习</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端学习" class="mobile-dropdown-title"><span class="title">前端学习</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/notes/javascript_tutoriol/basic/introduction.html" class="nav-link">
+  js基础教程
+</a></li><li class="dropdown-item"><!----> <a href="/notes/es6/intro.html" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/notes/NODE/node.html" class="nav-link">
+  nodeJS
+</a></li><li class="dropdown-item"><!----> <a href="/notes/webpack/base.html" class="nav-link">
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/notes/git/git.html" class="nav-link">
+  git
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试宝典" class="dropdown-title"><span class="title">面试宝典</span> <span class="arrow down"></span></button> <button type="button" aria-label="面试宝典" class="mobile-dropdown-title"><span class="title">面试宝典</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/notes/CSS/css1.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/notes/JS/array.html" class="nav-link">
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/notes/VUE/vue.html" class="nav-link">
+  VUE
+</a></li><li class="dropdown-item"><!----> <a href="/notes/OL/ol.html" class="nav-link">
+  OpenLayers
+</a></li><li class="dropdown-item"><!----> <a href="/notes/PERSIONAL/note1.html" class="nav-link">
+  面试必知必会
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="个人学习" class="dropdown-title"><span class="title">个人学习</span> <span class="arrow down"></span></button> <button type="button" aria-label="个人学习" class="mobile-dropdown-title"><span class="title">个人学习</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/notes/eCharts/layout.html" class="nav-link">
+  pink echarts
+</a></li></ul></div></div><div class="nav-item"><a href="/resources/website/frontend_blogs.html" class="nav-link">
+  优质链接
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端学习" class="dropdown-title"><span class="title">前端学习</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端学习" class="mobile-dropdown-title"><span class="title">前端学习</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/notes/javascript_tutoriol/basic/introduction.html" class="nav-link">
+  js基础教程
+</a></li><li class="dropdown-item"><!----> <a href="/notes/es6/intro.html" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/notes/NODE/node.html" class="nav-link">
+  nodeJS
+</a></li><li class="dropdown-item"><!----> <a href="/notes/webpack/base.html" class="nav-link">
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/notes/git/git.html" class="nav-link">
+  git
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试宝典" class="dropdown-title"><span class="title">面试宝典</span> <span class="arrow down"></span></button> <button type="button" aria-label="面试宝典" class="mobile-dropdown-title"><span class="title">面试宝典</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/notes/CSS/css1.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/notes/JS/array.html" class="nav-link">
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/notes/VUE/vue.html" class="nav-link">
+  VUE
+</a></li><li class="dropdown-item"><!----> <a href="/notes/OL/ol.html" class="nav-link">
+  OpenLayers
+</a></li><li class="dropdown-item"><!----> <a href="/notes/PERSIONAL/note1.html" class="nav-link">
+  面试必知必会
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="个人学习" class="dropdown-title"><span class="title">个人学习</span> <span class="arrow down"></span></button> <button type="button" aria-label="个人学习" class="mobile-dropdown-title"><span class="title">个人学习</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/notes/eCharts/layout.html" class="nav-link">
+  pink echarts
+</a></li></ul></div></div><div class="nav-item"><a href="/resources/website/frontend_blogs.html" class="nav-link">
+  优质链接
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/notes/JS/javascript.html" class="sidebar-link">JS基础</a></li><li><a href="/notes/JS/array.html" class="sidebar-link">JS数组</a></li><li><a href="/notes/JS/dom.html" class="sidebar-link">JS_DOM</a></li><li><a href="/notes/JS/func.html" class="sidebar-link">JS函数</a></li><li><a href="/notes/JS/project.html" class="sidebar-link">项目</a></li><li><a href="/notes/JS/jq.html" class="sidebar-link">jquery</a></li><li><a href="/notes/JS/storage.html" class="sidebar-link">JS存储</a></li><li><a href="/notes/JS/xhr.html" aria-current="page" class="active sidebar-link">xhr</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/notes/JS/xhr.html#ajax-和-jsonp" class="sidebar-link">ajax 和 jsonp ？</a></li><li class="sidebar-sub-header"><a href="/notes/JS/xhr.html#ajax-执行流程" class="sidebar-link">ajax 执行流程？</a></li><li class="sidebar-sub-header"><a href="/notes/JS/xhr.html#xhr-对象-status-readystate" class="sidebar-link">xhr 对象 status ? readystate?</a></li><li class="sidebar-sub-header"><a href="/notes/JS/xhr.html#ajax-是什么" class="sidebar-link">ajax 是什么?</a></li><li class="sidebar-sub-header"><a href="/notes/JS/xhr.html#ajax-请求方式有几种-8-种" class="sidebar-link">ajax 请求方式有几种（8 种）？</a></li><li class="sidebar-sub-header"><a href="/notes/JS/xhr.html#ajax-中-get-和-post-有什么区别" class="sidebar-link">ajax 中 get 和 post 有什么区别?</a></li><li class="sidebar-sub-header"><a href="/notes/JS/xhr.html#ajax-的缺点" class="sidebar-link">ajax 的缺点</a></li><li class="sidebar-sub-header"><a href="/notes/JS/xhr.html#如何确保-ajax-或连接不走缓存路径" class="sidebar-link">如何确保 ajax 或连接不走缓存路径</a></li><li class="sidebar-sub-header"><a href="/notes/JS/xhr.html#jsonp-原理-缺点" class="sidebar-link">jsonp 原理？ 缺点?</a></li><li class="sidebar-sub-header"><a href="/notes/JS/xhr.html#除了-jsonp-还有什么跨域方式" class="sidebar-link">除了 jsonp 还有什么跨域方式</a></li><li class="sidebar-sub-header"><a href="/notes/JS/xhr.html#readystate-0-4" class="sidebar-link">readystate 0~4</a></li><li class="sidebar-sub-header"><a href="/notes/JS/xhr.html#_200-201-302-304-400-404-500" class="sidebar-link">200, 201, 302, 304, 400, 404, 500</a></li><li class="sidebar-sub-header"><a href="/notes/JS/xhr.html#数据持久化技术-ajax-简述-ajax-流程" class="sidebar-link">数据持久化技术(ajax)?简述 ajax 流程</a></li></ul></li><li><section class="sidebar-group collapsable depth-0"><a href="/notes/JS/module" class="sidebar-heading clickable"><span>js模块化</span> <span class="arrow right"></span></a> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="ajax-和-jsonp"><a href="#ajax-和-jsonp" class="header-anchor">#</a> ajax 和 jsonp ？</h2> <p>ajax 和 jsonp 的区别：
+相同点：都是请求一个 url
+不同点：ajax 的核心是通过 xmlHttpRequest 获取内容
+jsonp 的核心则是动态添加 script 标签来调用服务器 提供的 js 脚本。</p> <h2 id="ajax-执行流程"><a href="#ajax-执行流程" class="header-anchor">#</a> ajax 执行流程？</h2> <ol><li>创建 XMLHttpRequest 对象,也就是创建一个异步调用对象</li> <li>创建一个新的 HTTP 请求,并指定该 HTTP 请求的方法、URL 及验证信息</li> <li>设置响应 HTTP 请求状态变化的函数</li> <li>发送 HTTP 请求</li> <li>获取异步调用返回的数据</li> <li>使用 JavaScript 和 DOM 实现局部刷新</li></ol> <h2 id="xhr-对象-status-readystate"><a href="#xhr-对象-status-readystate" class="header-anchor">#</a> xhr 对象 status ? readystate?</h2> <p>status 是 XMLHttpRequest 对象的一个属性，表示响应的 HTTP 状态码。
+readyState 是 XMLHttpRequest 对象的一个属性，用来标识当前 XMLHttpRequest 对象处于什么状态。</p> <h2 id="ajax-是什么"><a href="#ajax-是什么" class="header-anchor">#</a> ajax 是什么?</h2> <p>异步 javascript 和 XML，是指一种创建交互式网页应用的网页开发技术。通过后台与服务器进行少量数据交换，AJAX 可以使网页实现异步更新。这意味着可以在不重新加载整个网页的情况下，对网页的某部分进行更新。</p> <h2 id="ajax-请求方式有几种-8-种"><a href="#ajax-请求方式有几种-8-种" class="header-anchor">#</a> ajax 请求方式有几种（8 种）？</h2> <p>1）$.get(url,[data],[callback])
+2）$.getJSON(url,[data],[callback])
+3）$.post(url,[data],[callback],[type])
+4）$.ajax(opiton)
+5）$.getScript( url, [callback] )
+6）jquery 对象.load( url, [data], [callback] )
+7）serialize() 与 serializeArray()</p> <h2 id="ajax-中-get-和-post-有什么区别"><a href="#ajax-中-get-和-post-有什么区别" class="header-anchor">#</a> ajax 中 get 和 post 有什么区别?</h2> <p>get 和 post 都是数据提交的方式。
+get 的数据是通过网址问号后边拼接的字符串进行传递的。post 是通过一个 HTTP 包体进行传递数据的。
+get 的传输量是有限制的，post 是没有限制的。
+get 的安全性可能没有 post 高，所以我们一般用 get 来获取数据，post 一般用来修改数据。</p> <h2 id="ajax-的缺点"><a href="#ajax-的缺点" class="header-anchor">#</a> ajax 的缺点</h2> <p>1、ajax 不支持浏览器 back 按钮。
+2、安全问题 AJAX 暴露了与服务器交互的细节。
+3、对搜索引擎的支持比较弱。
+4、破坏了程序的异常机制。
+5、不容易调试</p> <h2 id="如何确保-ajax-或连接不走缓存路径"><a href="#如何确保-ajax-或连接不走缓存路径" class="header-anchor">#</a> 如何确保 ajax 或连接不走缓存路径</h2> <p>在 Ajax 中使用 Get 请求数据不会有页面缓存的问题，而使用 POST 请求可是有时候页面会缓存我们提交的信息，导致我们发送的异步请求不能正确的返回我们想要的数据</p> <div class="language- extra-class"><pre class="language-text"><code>$.post(url,data ,ranNum:Math.random()} ,function(data){}）
+</code></pre></div><p>ranNum : 这个是防止缓存的核心，每次发起请求都会用 Math.random()方法生成一个随机的数字，这样子就会刷新 url 缓存</p> <h2 id="jsonp-原理-缺点"><a href="#jsonp-原理-缺点" class="header-anchor">#</a> jsonp 原理？ 缺点?</h2> <p>工作原理：使用 script 标签实现跨域访问，可在 url 中指定回调函数，获取 JSON 数据并在指定的回调函数中执行 jquery 实现 jsop。</p> <p>缺点：只支持 GET 方式的 jsonp 实现，是一种脚本注入行为存在一定的安全隐患。如果返回的数据格式有问题或者返回失败了，并不会报错。</p> <h2 id="除了-jsonp-还有什么跨域方式"><a href="#除了-jsonp-还有什么跨域方式" class="header-anchor">#</a> 除了 jsonp 还有什么跨域方式</h2> <p>javascript 跨域有两种情况：
+1、基于同一父域的子域之间，如：http://a.c.com和http://b.c.com
+2、基于不同的父域之间，如：http://www.a.com和http://www.b.com
+3、端口的不同，如：http://www.a.com:8080和http://www.a.com:8088
+4、协议不同，如：http://www.a.com和https://www.a.com</p> <p>对于情况 3 和 4，需要通过后台 proxy 来解决，具体方式如下：
+a、在发起方的域下创建 proxy 程序
+b、发起方的 js 调用本域下的 proxy 程序
+c、proxy 将请求发送给接收方并获取相应数据
+d、proxy 将获得的数据返回给发起方的 js</p> <p>代码和 ajax 调用一致，其实这种方式就是通过 ajax 进行调用的
+而情况 1 和 2 除了通过后台 proxy 这种方式外，还可以有多种办法来解决：
+1、document.domain+iframe（只能解决情况 1）：
+a、在发起方页面和接收方页面设置 document.domain，并将值设为父域的主域名(window.location.hostname)
+b、在发起方页面创建一个隐藏的 iframe，iframe 的源是接收方页面
+c、根据浏览器的不同，通过 iframe.contentDocument || iframe.contentWindow.document 来获得接收方页面的内容
+d、通过获得的接收方页面的内容来与接收方进行交互
+这种方法有个缺点，就是当一个域被攻击时，另一个域会有安全漏洞出现。</p> <h2 id="readystate-0-4"><a href="#readystate-0-4" class="header-anchor">#</a> readystate 0~4</h2> <p>0：未初始化状态：此时，已经创建了一个 XMLHttpRequest 对象
+1： 准备发送状态：此时，已经调用了 XMLHttpRequest 对象的 open 方法，并且 XMLHttpRequest 对象已经准备好将一个请求发送到服务器端
+2：已经发送状态：此时，已经通过 send 方法把一个请求发送到服务器端，但是还没有收到一个响应
+3：正在接收状态：此时，已经接收到 HTTP 响应头部信息，但是消息体部分还没有完全接收到
+4：完成响应状态：此时，已经完成了 HTTP 响应的接收 46.说出几个 http 协议状态码?</p> <h2 id="_200-201-302-304-400-404-500"><a href="#_200-201-302-304-400-404-500" class="header-anchor">#</a> 200, 201, 302, 304, 400, 404, 500</h2> <p>200：请求成功
+201：请求成功并且服务器创建了新的资源
+302：服务器目前从不同位置的网页响应请求，但请求者应继续使用原有位置来响应以后的请求。
+304：自从上次请求后，请求的网页未修改过。服务器返回此响应时，不会返回网页内容。
+400：服务器不理解请求的语法。
+404：请求的资源（网页等）不存在
+500： 内部服务器错误</p> <h2 id="数据持久化技术-ajax-简述-ajax-流程"><a href="#数据持久化技术-ajax-简述-ajax-流程" class="header-anchor">#</a> 数据持久化技术(ajax)?简述 ajax 流程</h2> <p>1)客户端产生 js 的事件 2)创建 XMLHttpRequest 对象 3)对 XMLHttpRequest 进行配置 4)通过 AJAX 引擎发送异步请求 5)服务器端接收请求并且处理请求，返回 html 或者 xml 内容
+6)XML 调用一个 callback()处理响应回来的内容 7)页面局部刷新</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/notes/JS/storage.html" class="prev">
+        JS存储
+      </a></span> <span class="next"><a href="/notes/JS/module/commonjs.html">
+        commonjs
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.d11e3cee.js" defer></script><script src="/assets/js/2.15dfde48.js" defer></script><script src="/assets/js/34.9e053790.js" defer></script>
+  </body>
+</html>

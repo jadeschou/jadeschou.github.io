@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>几种基本数据类型?复杂数据类型?值类型和引用数据类型?堆栈数据结构? | JadeBlog</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="这是我的第一个 VuePress 站点">
+    
+    <link rel="preload" href="/assets/css/0.styles.9825735b.css" as="style"><link rel="preload" href="/assets/js/app.d11e3cee.js" as="script"><link rel="preload" href="/assets/js/2.15dfde48.js" as="script"><link rel="preload" href="/assets/js/27.e7eaf9dc.js" as="script"><link rel="prefetch" href="/assets/js/10.1d6542d0.js"><link rel="prefetch" href="/assets/js/100.69c90d5b.js"><link rel="prefetch" href="/assets/js/101.80a1d206.js"><link rel="prefetch" href="/assets/js/102.39b57a31.js"><link rel="prefetch" href="/assets/js/103.f7c75e3a.js"><link rel="prefetch" href="/assets/js/104.b04e0e89.js"><link rel="prefetch" href="/assets/js/105.fdacd3c8.js"><link rel="prefetch" href="/assets/js/106.d37cb95e.js"><link rel="prefetch" href="/assets/js/107.34a0f5fd.js"><link rel="prefetch" href="/assets/js/108.89d967be.js"><link rel="prefetch" href="/assets/js/109.b5d4a332.js"><link rel="prefetch" href="/assets/js/11.8d74eaad.js"><link rel="prefetch" href="/assets/js/110.c1448e06.js"><link rel="prefetch" href="/assets/js/111.15daae95.js"><link rel="prefetch" href="/assets/js/112.8338d61d.js"><link rel="prefetch" href="/assets/js/113.ab08ae6f.js"><link rel="prefetch" href="/assets/js/114.e14d8abc.js"><link rel="prefetch" href="/assets/js/115.869e2c33.js"><link rel="prefetch" href="/assets/js/116.7e8559ae.js"><link rel="prefetch" href="/assets/js/117.7d3c511c.js"><link rel="prefetch" href="/assets/js/118.9b1240f7.js"><link rel="prefetch" href="/assets/js/119.2b127730.js"><link rel="prefetch" href="/assets/js/12.16b1daa2.js"><link rel="prefetch" href="/assets/js/120.87f58f0c.js"><link rel="prefetch" href="/assets/js/121.70ab9cc8.js"><link rel="prefetch" href="/assets/js/122.cabcfc2a.js"><link rel="prefetch" href="/assets/js/123.541e4943.js"><link rel="prefetch" href="/assets/js/124.f2062a0e.js"><link rel="prefetch" href="/assets/js/125.9e66949d.js"><link rel="prefetch" href="/assets/js/126.6b15c8b9.js"><link rel="prefetch" href="/assets/js/127.6146871d.js"><link rel="prefetch" href="/assets/js/128.e677db4d.js"><link rel="prefetch" href="/assets/js/129.09545436.js"><link rel="prefetch" href="/assets/js/13.0281535b.js"><link rel="prefetch" href="/assets/js/130.9c3abd94.js"><link rel="prefetch" href="/assets/js/131.3064267e.js"><link rel="prefetch" href="/assets/js/132.da532bf7.js"><link rel="prefetch" href="/assets/js/133.30702809.js"><link rel="prefetch" href="/assets/js/134.d9055538.js"><link rel="prefetch" href="/assets/js/135.14a41e74.js"><link rel="prefetch" href="/assets/js/136.32df2b71.js"><link rel="prefetch" href="/assets/js/137.ca50a89a.js"><link rel="prefetch" href="/assets/js/138.8dd073bf.js"><link rel="prefetch" href="/assets/js/139.004c55fd.js"><link rel="prefetch" href="/assets/js/14.bc811607.js"><link rel="prefetch" href="/assets/js/140.8bbac53a.js"><link rel="prefetch" href="/assets/js/141.fe81c4cc.js"><link rel="prefetch" href="/assets/js/142.dc8ae8dd.js"><link rel="prefetch" href="/assets/js/143.c1468060.js"><link rel="prefetch" href="/assets/js/144.3a348c7b.js"><link rel="prefetch" href="/assets/js/145.a25d6bb7.js"><link rel="prefetch" href="/assets/js/146.23fd565d.js"><link rel="prefetch" href="/assets/js/147.fc0983a0.js"><link rel="prefetch" href="/assets/js/148.cd70ec09.js"><link rel="prefetch" href="/assets/js/149.bf6ab5e6.js"><link rel="prefetch" href="/assets/js/15.c983b002.js"><link rel="prefetch" href="/assets/js/150.fa46f15b.js"><link rel="prefetch" href="/assets/js/151.9532788a.js"><link rel="prefetch" href="/assets/js/152.56813666.js"><link rel="prefetch" href="/assets/js/153.be301432.js"><link rel="prefetch" href="/assets/js/154.b071977c.js"><link rel="prefetch" href="/assets/js/155.4a802d60.js"><link rel="prefetch" href="/assets/js/156.61ff06b3.js"><link rel="prefetch" href="/assets/js/157.0bdab47c.js"><link rel="prefetch" href="/assets/js/158.825cafec.js"><link rel="prefetch" href="/assets/js/159.5643a12c.js"><link rel="prefetch" href="/assets/js/16.2f1c3448.js"><link rel="prefetch" href="/assets/js/160.22a89e92.js"><link rel="prefetch" href="/assets/js/161.ca7947b5.js"><link rel="prefetch" href="/assets/js/162.6f04d719.js"><link rel="prefetch" href="/assets/js/163.a95454b7.js"><link rel="prefetch" href="/assets/js/164.642a0c17.js"><link rel="prefetch" href="/assets/js/165.95da23db.js"><link rel="prefetch" href="/assets/js/166.175552e8.js"><link rel="prefetch" href="/assets/js/167.6ac57869.js"><link rel="prefetch" href="/assets/js/168.38747243.js"><link rel="prefetch" href="/assets/js/169.6b443b7f.js"><link rel="prefetch" href="/assets/js/17.bbaba275.js"><link rel="prefetch" href="/assets/js/170.78aebb35.js"><link rel="prefetch" href="/assets/js/171.61b5d111.js"><link rel="prefetch" href="/assets/js/172.b639d0f8.js"><link rel="prefetch" href="/assets/js/173.347a854a.js"><link rel="prefetch" href="/assets/js/174.a2cd1c97.js"><link rel="prefetch" href="/assets/js/175.4bd8cda6.js"><link rel="prefetch" href="/assets/js/176.db373907.js"><link rel="prefetch" href="/assets/js/177.ed85b401.js"><link rel="prefetch" href="/assets/js/178.74c6edea.js"><link rel="prefetch" href="/assets/js/179.2e18a603.js"><link rel="prefetch" href="/assets/js/18.b6762a2b.js"><link rel="prefetch" href="/assets/js/180.a63a43cb.js"><link rel="prefetch" href="/assets/js/181.a048129b.js"><link rel="prefetch" href="/assets/js/182.fdf5077d.js"><link rel="prefetch" href="/assets/js/183.027c2dec.js"><link rel="prefetch" href="/assets/js/184.930c4dcc.js"><link rel="prefetch" href="/assets/js/185.00ed7c41.js"><link rel="prefetch" href="/assets/js/186.0ba1c93f.js"><link rel="prefetch" href="/assets/js/187.7b0d317a.js"><link rel="prefetch" href="/assets/js/19.144c82e3.js"><link rel="prefetch" href="/assets/js/20.e631c2be.js"><link rel="prefetch" href="/assets/js/21.e7099142.js"><link rel="prefetch" href="/assets/js/22.3e9f6c68.js"><link rel="prefetch" href="/assets/js/23.5f3ae9b4.js"><link rel="prefetch" href="/assets/js/24.874cb236.js"><link rel="prefetch" href="/assets/js/25.8ef4dd62.js"><link rel="prefetch" href="/assets/js/26.76453e06.js"><link rel="prefetch" href="/assets/js/28.ecf261ca.js"><link rel="prefetch" href="/assets/js/29.98863b55.js"><link rel="prefetch" href="/assets/js/3.829dd85b.js"><link rel="prefetch" href="/assets/js/30.8581643d.js"><link rel="prefetch" href="/assets/js/31.31b38b08.js"><link rel="prefetch" href="/assets/js/32.7b3d84e3.js"><link rel="prefetch" href="/assets/js/33.8ac976c5.js"><link rel="prefetch" href="/assets/js/34.9e053790.js"><link rel="prefetch" href="/assets/js/35.782db859.js"><link rel="prefetch" href="/assets/js/36.03b3e63f.js"><link rel="prefetch" href="/assets/js/37.5980d90f.js"><link rel="prefetch" href="/assets/js/38.edd3e45b.js"><link rel="prefetch" href="/assets/js/39.76190893.js"><link rel="prefetch" href="/assets/js/4.a6ff6c73.js"><link rel="prefetch" href="/assets/js/40.c25b6dd0.js"><link rel="prefetch" href="/assets/js/41.061740ef.js"><link rel="prefetch" href="/assets/js/42.e826b333.js"><link rel="prefetch" href="/assets/js/43.f98089ed.js"><link rel="prefetch" href="/assets/js/44.440184ea.js"><link rel="prefetch" href="/assets/js/45.0711ba3e.js"><link rel="prefetch" href="/assets/js/46.9917f242.js"><link rel="prefetch" href="/assets/js/47.d5f2913a.js"><link rel="prefetch" href="/assets/js/48.67769cca.js"><link rel="prefetch" href="/assets/js/49.ef381d2f.js"><link rel="prefetch" href="/assets/js/5.29174b86.js"><link rel="prefetch" href="/assets/js/50.c964b8de.js"><link rel="prefetch" href="/assets/js/51.99e93d0a.js"><link rel="prefetch" href="/assets/js/52.4ccd47d8.js"><link rel="prefetch" href="/assets/js/53.de35c701.js"><link rel="prefetch" href="/assets/js/54.21207a14.js"><link rel="prefetch" href="/assets/js/55.f5360bdb.js"><link rel="prefetch" href="/assets/js/56.ab91f892.js"><link rel="prefetch" href="/assets/js/57.2d4454cd.js"><link rel="prefetch" href="/assets/js/58.8aa1e70d.js"><link rel="prefetch" href="/assets/js/59.5f07be27.js"><link rel="prefetch" href="/assets/js/6.f7be6a44.js"><link rel="prefetch" href="/assets/js/60.ce564487.js"><link rel="prefetch" href="/assets/js/61.998e4cd9.js"><link rel="prefetch" href="/assets/js/62.c8675b48.js"><link rel="prefetch" href="/assets/js/63.29398dac.js"><link rel="prefetch" href="/assets/js/64.e5dcf98b.js"><link rel="prefetch" href="/assets/js/65.fa9740f8.js"><link rel="prefetch" href="/assets/js/66.ae0c77a7.js"><link rel="prefetch" href="/assets/js/67.6bbb781b.js"><link rel="prefetch" href="/assets/js/68.59379074.js"><link rel="prefetch" href="/assets/js/69.f0508b5f.js"><link rel="prefetch" href="/assets/js/7.81423bd2.js"><link rel="prefetch" href="/assets/js/70.854be39d.js"><link rel="prefetch" href="/assets/js/71.5f582047.js"><link rel="prefetch" href="/assets/js/72.9e844147.js"><link rel="prefetch" href="/assets/js/73.6fb90507.js"><link rel="prefetch" href="/assets/js/74.43f51081.js"><link rel="prefetch" href="/assets/js/75.0c6b66ec.js"><link rel="prefetch" href="/assets/js/76.35461a8b.js"><link rel="prefetch" href="/assets/js/77.c7c7cee8.js"><link rel="prefetch" href="/assets/js/78.fe2f2eeb.js"><link rel="prefetch" href="/assets/js/79.8686b15c.js"><link rel="prefetch" href="/assets/js/8.71c1d1cf.js"><link rel="prefetch" href="/assets/js/80.34567803.js"><link rel="prefetch" href="/assets/js/81.ed82025a.js"><link rel="prefetch" href="/assets/js/82.5e180264.js"><link rel="prefetch" href="/assets/js/83.efa725f1.js"><link rel="prefetch" href="/assets/js/84.1748113e.js"><link rel="prefetch" href="/assets/js/85.4c2b3b47.js"><link rel="prefetch" href="/assets/js/86.94f15575.js"><link rel="prefetch" href="/assets/js/87.3f91983f.js"><link rel="prefetch" href="/assets/js/88.c1f41926.js"><link rel="prefetch" href="/assets/js/89.5058325f.js"><link rel="prefetch" href="/assets/js/9.96f83588.js"><link rel="prefetch" href="/assets/js/90.a8109101.js"><link rel="prefetch" href="/assets/js/91.2de3840a.js"><link rel="prefetch" href="/assets/js/92.c4460598.js"><link rel="prefetch" href="/assets/js/93.66619af2.js"><link rel="prefetch" href="/assets/js/94.60c25e02.js"><link rel="prefetch" href="/assets/js/95.2e6d1c32.js"><link rel="prefetch" href="/assets/js/96.63ba1d3d.js"><link rel="prefetch" href="/assets/js/97.f887884b.js"><link rel="prefetch" href="/assets/js/98.3562a0ce.js"><link rel="prefetch" href="/assets/js/99.4f6a7e8b.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.9825735b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">JadeBlog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端学习" class="dropdown-title"><span class="title">前端学习</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端学习" class="mobile-dropdown-title"><span class="title">前端学习</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/notes/javascript_tutoriol/basic/introduction.html" class="nav-link">
+  js基础教程
+</a></li><li class="dropdown-item"><!----> <a href="/notes/es6/intro.html" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/notes/NODE/node.html" class="nav-link">
+  nodeJS
+</a></li><li class="dropdown-item"><!----> <a href="/notes/webpack/base.html" class="nav-link">
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/notes/git/git.html" class="nav-link">
+  git
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试宝典" class="dropdown-title"><span class="title">面试宝典</span> <span class="arrow down"></span></button> <button type="button" aria-label="面试宝典" class="mobile-dropdown-title"><span class="title">面试宝典</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/notes/CSS/css1.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/notes/JS/array.html" class="nav-link">
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/notes/VUE/vue.html" class="nav-link">
+  VUE
+</a></li><li class="dropdown-item"><!----> <a href="/notes/OL/ol.html" class="nav-link">
+  OpenLayers
+</a></li><li class="dropdown-item"><!----> <a href="/notes/PERSIONAL/note1.html" class="nav-link">
+  面试必知必会
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="个人学习" class="dropdown-title"><span class="title">个人学习</span> <span class="arrow down"></span></button> <button type="button" aria-label="个人学习" class="mobile-dropdown-title"><span class="title">个人学习</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/notes/eCharts/layout.html" class="nav-link">
+  pink echarts
+</a></li></ul></div></div><div class="nav-item"><a href="/resources/website/frontend_blogs.html" class="nav-link">
+  优质链接
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端学习" class="dropdown-title"><span class="title">前端学习</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端学习" class="mobile-dropdown-title"><span class="title">前端学习</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/notes/javascript_tutoriol/basic/introduction.html" class="nav-link">
+  js基础教程
+</a></li><li class="dropdown-item"><!----> <a href="/notes/es6/intro.html" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/notes/NODE/node.html" class="nav-link">
+  nodeJS
+</a></li><li class="dropdown-item"><!----> <a href="/notes/webpack/base.html" class="nav-link">
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/notes/git/git.html" class="nav-link">
+  git
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试宝典" class="dropdown-title"><span class="title">面试宝典</span> <span class="arrow down"></span></button> <button type="button" aria-label="面试宝典" class="mobile-dropdown-title"><span class="title">面试宝典</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/notes/CSS/css1.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/notes/JS/array.html" class="nav-link">
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/notes/VUE/vue.html" class="nav-link">
+  VUE
+</a></li><li class="dropdown-item"><!----> <a href="/notes/OL/ol.html" class="nav-link">
+  OpenLayers
+</a></li><li class="dropdown-item"><!----> <a href="/notes/PERSIONAL/note1.html" class="nav-link">
+  面试必知必会
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="个人学习" class="dropdown-title"><span class="title">个人学习</span> <span class="arrow down"></span></button> <button type="button" aria-label="个人学习" class="mobile-dropdown-title"><span class="title">个人学习</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/notes/eCharts/layout.html" class="nav-link">
+  pink echarts
+</a></li></ul></div></div><div class="nav-item"><a href="/resources/website/frontend_blogs.html" class="nav-link">
+  优质链接
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/notes/JS/javascript.html" aria-current="page" class="active sidebar-link">JS基础</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/notes/JS/javascript.html#几种基本数据类型-复杂数据类型-值类型和引用数据类型-堆栈数据结构" class="sidebar-link">几种基本数据类型?复杂数据类型?值类型和引用数据类型?堆栈数据结构?</a></li><li class="sidebar-sub-header"><a href="/notes/JS/javascript.html#js-变量和函数声明的提升" class="sidebar-link">js 变量和函数声明的提升</a></li><li class="sidebar-sub-header"><a href="/notes/JS/javascript.html#判断数据类型" class="sidebar-link">判断数据类型?</a></li><li class="sidebar-sub-header"><a href="/notes/JS/javascript.html#浅拷贝" class="sidebar-link">浅拷贝：</a></li><li class="sidebar-sub-header"><a href="/notes/JS/javascript.html#深拷贝" class="sidebar-link">深拷贝：</a></li><li class="sidebar-sub-header"><a href="/notes/JS/javascript.html#浅拷贝的实现方式" class="sidebar-link">浅拷贝的实现方式:</a></li><li class="sidebar-sub-header"><a href="/notes/JS/javascript.html#let-和-const-的区别是什么" class="sidebar-link">let 和 const 的区别是什么?</a></li><li class="sidebar-sub-header"><a href="/notes/JS/javascript.html#eval-是做什么的" class="sidebar-link">eval 是做什么的？</a></li><li class="sidebar-sub-header"><a href="/notes/JS/javascript.html#null-undefined-的区别" class="sidebar-link">null，undefined 的区别？</a></li><li class="sidebar-sub-header"><a href="/notes/JS/javascript.html#和-的区别" class="sidebar-link">== 和 ===的区别</a></li><li class="sidebar-sub-header"><a href="/notes/JS/javascript.html#同步和异步" class="sidebar-link">同步和异步</a></li><li class="sidebar-sub-header"><a href="/notes/JS/javascript.html#this" class="sidebar-link">this</a></li><li class="sidebar-sub-header"><a href="/notes/JS/javascript.html#谈谈你对-call、apply、bind-理解" class="sidebar-link">谈谈你对 call、apply、bind 理解</a></li><li class="sidebar-sub-header"><a href="/notes/JS/javascript.html#同源策略" class="sidebar-link">同源策略</a></li><li class="sidebar-sub-header"><a href="/notes/JS/javascript.html#如何解决跨域" class="sidebar-link">如何解决跨域</a></li><li class="sidebar-sub-header"><a href="/notes/JS/javascript.html#严格模式的限制" class="sidebar-link">严格模式的限制</a></li><li class="sidebar-sub-header"><a href="/notes/JS/javascript.html#es6-新增" class="sidebar-link">es6 新增</a></li><li class="sidebar-sub-header"><a href="/notes/JS/javascript.html#内存泄漏" class="sidebar-link">内存泄漏</a></li><li class="sidebar-sub-header"><a href="/notes/JS/javascript.html#js-垃圾回收机制是怎样的" class="sidebar-link">JS 垃圾回收机制是怎样的？</a></li><li class="sidebar-sub-header"><a href="/notes/JS/javascript.html#堆栈溢出有什么区别-内存泄漏-那些操作会造成内存泄漏-怎么样防止内存泄漏" class="sidebar-link">堆栈溢出有什么区别？ 内存泄漏? 那些操作会造成内存泄漏？怎么样防止内存泄漏？</a></li><li class="sidebar-sub-header"><a href="/notes/JS/javascript.html#说说面向对象编程思想" class="sidebar-link">说说面向对象编程思想?</a></li><li class="sidebar-sub-header"><a href="/notes/JS/javascript.html#什么是单线程-和异步的关系" class="sidebar-link">什么是单线程，和异步的关系？</a></li><li class="sidebar-sub-header"><a href="/notes/JS/javascript.html#逐进增强和优雅降级" class="sidebar-link">逐进增强和优雅降级</a></li><li class="sidebar-sub-header"><a href="/notes/JS/javascript.html#堆和栈存储机制有什么区别" class="sidebar-link">堆和栈存储机制有什么区别</a></li><li class="sidebar-sub-header"><a href="/notes/JS/javascript.html#防抖和节流" class="sidebar-link">防抖和节流</a></li><li class="sidebar-sub-header"><a href="/notes/JS/javascript.html#arguments-的对象是什么" class="sidebar-link">arguments 的对象是什么？</a></li><li class="sidebar-sub-header"><a href="/notes/JS/javascript.html#柯里化函数" class="sidebar-link">柯里化函数</a></li><li class="sidebar-sub-header"><a href="/notes/JS/javascript.html#new-的原理" class="sidebar-link">new 的原理</a></li><li class="sidebar-sub-header"><a href="/notes/JS/javascript.html#谈谈你对-js-eventloop-事件循环-的理解" class="sidebar-link">谈谈你对 JS eventloop(事件循环)的理解</a></li><li class="sidebar-sub-header"><a href="/notes/JS/javascript.html#如何让-a-1-a-2-a-3-的值为-true" class="sidebar-link">如何让(a == 1 &amp;&amp; a == 2 &amp;&amp; a == 3)的值为 true？</a></li><li class="sidebar-sub-header"><a href="/notes/JS/javascript.html#为什么-0-1-0-2-0-3-如何让其相等" class="sidebar-link">为什么 0.1 + 0.2 !== 0.3，如何让其相等</a></li><li class="sidebar-sub-header"><a href="/notes/JS/javascript.html#for-in-迭代和-for-of-有什么区别" class="sidebar-link">for...in 迭代和 for...of 有什么区别</a></li><li class="sidebar-sub-header"><a href="/notes/JS/javascript.html#谈谈你对-promise、generator、async-await-理解" class="sidebar-link">谈谈你对 promise、Generator、async/await 理解</a></li><li class="sidebar-sub-header"><a href="/notes/JS/javascript.html#谈谈你对模块化开发的理解" class="sidebar-link">谈谈你对模块化开发的理解？</a></li><li class="sidebar-sub-header"><a href="/notes/JS/javascript.html#js-的几种模块规范" class="sidebar-link">js 的几种模块规范？</a></li><li class="sidebar-sub-header"><a href="/notes/JS/javascript.html#require-与-import-的区别和使用" class="sidebar-link">require 与 import 的区别和使用</a></li><li class="sidebar-sub-header"><a href="/notes/JS/javascript.html#js-延迟加载的方式有哪些" class="sidebar-link">js 延迟加载的方式有哪些？</a></li><li class="sidebar-sub-header"><a href="/notes/JS/javascript.html#说说异步编程的实现方式" class="sidebar-link">说说异步编程的实现方式?</a></li><li class="sidebar-sub-header"><a href="/notes/JS/javascript.html#如何清除一个定时器" class="sidebar-link">如何清除一个定时器?</a></li><li class="sidebar-sub-header"><a href="/notes/JS/javascript.html#事件委托-有什么好处" class="sidebar-link">事件委托？有什么好处?</a></li><li class="sidebar-sub-header"><a href="/notes/JS/javascript.html#gc-机制是什么-为什么闭包不会被回收变量和函数" class="sidebar-link">Gc 机制是什么？为什么闭包不会被回收变量和函数？</a></li><li class="sidebar-sub-header"><a href="/notes/JS/javascript.html#promise" class="sidebar-link">promise</a></li><li class="sidebar-sub-header"><a href="/notes/JS/javascript.html#如何创建一个对象" class="sidebar-link">如何创建一个对象？</a></li><li class="sidebar-sub-header"><a href="/notes/JS/javascript.html#js-的几种继承方式" class="sidebar-link">js 的几种继承方式？</a></li><li class="sidebar-sub-header"><a href="/notes/JS/javascript.html#作用域链" class="sidebar-link">作用域链？</a></li><li class="sidebar-sub-header"><a href="/notes/JS/javascript.html#闭包" class="sidebar-link">闭包</a></li><li class="sidebar-sub-header"><a href="/notes/JS/javascript.html#什么是原型、原型链、继承" class="sidebar-link">什么是原型、原型链、继承？</a></li></ul></li><li><a href="/notes/JS/array.html" class="sidebar-link">JS数组</a></li><li><a href="/notes/JS/dom.html" class="sidebar-link">JS_DOM</a></li><li><a href="/notes/JS/func.html" class="sidebar-link">JS函数</a></li><li><a href="/notes/JS/project.html" class="sidebar-link">项目</a></li><li><a href="/notes/JS/jq.html" class="sidebar-link">jquery</a></li><li><a href="/notes/JS/storage.html" class="sidebar-link">JS存储</a></li><li><a href="/notes/JS/xhr.html" class="sidebar-link">xhr</a></li><li><section class="sidebar-group collapsable depth-0"><a href="/notes/JS/module" class="sidebar-heading clickable"><span>js模块化</span> <span class="arrow right"></span></a> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="几种基本数据类型-复杂数据类型-值类型和引用数据类型-堆栈数据结构"><a href="#几种基本数据类型-复杂数据类型-值类型和引用数据类型-堆栈数据结构" class="header-anchor">#</a> 几种基本数据类型?复杂数据类型?值类型和引用数据类型?堆栈数据结构?</h2> <p><strong>基本数据类型</strong>：Undefined、Null、Boolean、Number、String、Symbol
+<strong>引用数据类型</strong>：Object、Array、Function
+还有两个特殊的对象：正则（RegExp）和日期（Date）</p> <h2 id="js-变量和函数声明的提升"><a href="#js-变量和函数声明的提升" class="header-anchor">#</a> js 变量和函数声明的提升</h2> <p>在 js 中函数声明 <strong>function aa(){}</strong> 与变量声明<strong>var</strong>会提升到最顶部执行
+函数的提升高于变量的提升
+函数内部如果用 var 声明了相同名称的外部变量，函数将不再向上寻找。
+匿名函数不会提升。</p> <h2 id="判断数据类型"><a href="#判断数据类型" class="header-anchor">#</a> 判断数据类型?</h2> <p><strong>typeof</strong> 对于基本数据类型来说，除了 null 都可以显示正确的类型，typeof 对于对象来说，除了函数都会显示 object</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">typeof</span> <span class="token number">5</span><span class="token punctuation">;</span> <span class="token comment">// 'number'</span>
+<span class="token keyword">typeof</span> <span class="token string">&quot;5&quot;</span><span class="token punctuation">;</span> <span class="token comment">// 'string'</span>
+<span class="token keyword">typeof</span> <span class="token keyword">undefined</span><span class="token punctuation">;</span> <span class="token comment">// 'undefined'</span>
+<span class="token keyword">typeof</span> <span class="token boolean">false</span><span class="token punctuation">;</span> <span class="token comment">// 'boolean'</span>
+<span class="token keyword">typeof</span> <span class="token function">Symbol</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 'symbol'</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">typeof</span> <span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//object</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">typeof</span> <span class="token number">NaN</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//number</span>
+<span class="token keyword">typeof</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// 'object'</span>
+<span class="token keyword">typeof</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span> <span class="token comment">// 'object'</span>
+<span class="token keyword">typeof</span> console<span class="token punctuation">.</span>log<span class="token punctuation">;</span> <span class="token comment">// 'function'</span>
+</code></pre></div><p><strong>instanceof</strong> 通过原型链来判断数据类型的</p> <div class="language-js extra-class"><pre class="language-js"><code>p1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+p1 <span class="token keyword">instanceof</span> <span class="token class-name">Person</span><span class="token punctuation">;</span> <span class="token comment">// true</span>
+</code></pre></div><p><code>Object.prototype.toString.call()</code> 可以检测所有的数据类型，算是一个比较完美的方法了。
+<strong>Array.isArray(value)</strong>
+如果 value 是一个数组，则返回 true；否则返回 false。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token class-name">Object</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//[object Object]</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token class-name">Object</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>arr<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//[object Array]</span>
+</code></pre></div><h3 id="浅拷贝赋值的区别-如何实现"><a href="#浅拷贝赋值的区别-如何实现" class="header-anchor">#</a> 浅拷贝赋值的区别，如何实现</h3> <p>深拷贝和浅拷贝是针对复杂数据类型来说的，浅拷贝只拷贝一层，而深拷贝是层层拷贝。</p> <h2 id="浅拷贝"><a href="#浅拷贝" class="header-anchor">#</a> 浅拷贝：</h2> <p>将原对象或原数组的引用直接赋给新对象，新数组，新对象只是对原对象的一个引用，而不复制对象本身，新旧对象还是共享同一块内存</p> <p>如果属性是一个基本数据类型，拷贝就是基本类型的值，如果属性是引用类型，拷贝的就是内存地址,</p> <h2 id="深拷贝"><a href="#深拷贝" class="header-anchor">#</a> 深拷贝：</h2> <p>创建一个新的对象和数组，将原对象的各项属性的“值”（数组的所有元素）拷贝过来，是“值”而不是“引用”</p> <p>深拷贝就是把一个对象，从内存中完整的拷贝出来，从【堆内存】中开辟了新区域，用来存新对象，并且修改新对象不会影响原对象</p> <h2 id="浅拷贝的实现方式"><a href="#浅拷贝的实现方式" class="header-anchor">#</a> 浅拷贝的实现方式:</h2> <ol><li><p>Object.assign()
+Object.assign 会合并对象生成一个新对象。如果对象的属性是普通类型改变之后新对象不会改变，如果是引用类型改变后新对象也会改变，所以 Object.assign 实际上还是浅拷贝。</p></li> <li><p>lodash 里面的 _.clone</p></li> <li><p>...扩展运算符</p></li> <li><p>Array.prototype.concat</p></li> <li><p>Array.prototype.slice</p></li></ol> <h3 id="深拷贝的实现方式"><a href="#深拷贝的实现方式" class="header-anchor">#</a> 深拷贝的实现方式:</h3> <ol><li>JSON.parse(JSON.stringify())
+利用 JSON.stringify(obj)将对象先转为 json 字符串，再 JSON.parse(）转回为 json 对象可以实现深拷贝，这也是比较常用的一种方法。</li> <li>递归操作</li> <li>cloneDeep</li> <li>Jquery.extend()</li></ol> <p>// 深拷贝：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">checkType</span><span class="token punctuation">(</span><span class="token parameter">target</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token class-name">Object</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>target<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">function</span> <span class="token function">deepClone</span><span class="token punctuation">(</span><span class="token parameter">data</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> obj <span class="token operator">=</span> <span class="token function">checkType</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token string">&quot;Array&quot;</span> <span class="token operator">?</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">&quot;Object&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Array&quot;</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">includes</span><span class="token punctuation">(</span><span class="token function">checkType</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">const</span> key <span class="token keyword">in</span> data<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> value <span class="token operator">=</span> data<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">;</span>
+      <span class="token comment">// 如果拷贝的是简单类型的值直接进行赋值</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token punctuation">[</span><span class="token string">&quot;Object&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;Array&quot;</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">includes</span><span class="token punctuation">(</span><span class="token function">checkType</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        obj<span class="token punctuation">[</span>key<span class="token punctuation">]</span> <span class="token operator">=</span> value<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 定义一个映射，初始化的时候将 data 本身加入映射中</span>
+        <span class="token keyword">const</span> map <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">WeakMap</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// 如果拷贝的是复杂数据类型第一次拷贝后存入 map</span>
+        <span class="token comment">// 第二次再次遇到该值时直接赋值为 null，结束递归</span>
+        map<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>data<span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>map<span class="token punctuation">.</span><span class="token function">has</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          obj<span class="token punctuation">[</span>key<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+          map<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>value<span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          obj<span class="token punctuation">[</span>key<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">deepClone</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> data<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> obj<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="let-和-const-的区别是什么"><a href="#let-和-const-的区别是什么" class="header-anchor">#</a> let 和 const 的区别是什么?</h2> <p>let 命令不存在变量提升，如果在 let 前使用，会导致报错
+如果块区中存在 let 和 const 命令，就会形成封闭作用域
+不允许重复声明
+const 定义的是常量，不能修改，但是如果定义的是对象，可以修改对象内部的数据</p> <h2 id="eval-是做什么的"><a href="#eval-是做什么的" class="header-anchor">#</a> eval 是做什么的？</h2> <p>它的功能是把对应的字符串解析成 JS 代码并运行； 应该避免使用 eval，不安全，非常耗性能（2 次，一次解析成 js 语句，一次执行）。</p> <h2 id="null-undefined-的区别"><a href="#null-undefined-的区别" class="header-anchor">#</a> null，undefined 的区别？</h2> <p>undefined 表示变量声明但未初始化的值，null 表示准备用来保存对象，还没有真正保存对象的值。从逻辑角度看，null 表示一个空对象指针。</p> <h2 id="和-的区别"><a href="#和-的区别" class="header-anchor">#</a> == 和 ===的区别</h2> <p>==是非严格意义上的相等
+值相等就相等
+===是严格意义上的相等，会比较两边的数据类型和值大小
+值和引用地址都相等才相等</p> <h2 id="同步和异步"><a href="#同步和异步" class="header-anchor">#</a> 同步和异步</h2> <ol><li><p>进程同步：就是在发出一个功能调用时，在没有得到结果之前，该调用就不返回。也就是必须一件一件事做,等前一件做完了才能做下一件事</p></li> <li><p>步的概念和同步相对。当一个异步过程调用发出后，调用者不能立刻得到结果。实际处理这个调用的部件在完成后，通过状态、通知和回调来通知调用者。</p></li></ol> <p><strong>好处</strong>
+可以读取函数内部的变量
+将变量始终保持在内存中
+可以封装对象的私有属性和私有方法
+<strong>坏处</strong>
+比较耗费内存、使用不当会造成内存溢出的问题</p> <h2 id="this"><a href="#this" class="header-anchor">#</a> this</h2> <p>this 总是指向函数的直接调用者
+如果有 new 关键字，this 指向 new 出来的对象
+在事件中，this 指向触发这个事件的对象</p> <h2 id="谈谈你对-call、apply、bind-理解"><a href="#谈谈你对-call、apply、bind-理解" class="header-anchor">#</a> 谈谈你对 call、apply、bind 理解</h2> <p>都是来改变 this 指向和函数的调⽤，实际上 call 与 apply 的功能是相同的，只是两者的传参方式不一样，</p> <p>call ⽅法跟的是⼀个参数列表，
+apply 跟⼀个 数组作为参数，call ⽅法和 apply 使⽤后就直接调⽤
+bind 传参后不会立即执行，而是返回一个改变了 this 指向的函数，这个函数可以继续传参，且执行，需要类似于 bind()()两个括号才能调⽤。
+好处： 实现更好的继承和扩展，更安全。</p> <h2 id="同源策略"><a href="#同源策略" class="header-anchor">#</a> 同源策略</h2> <p>同源指的是域名、协议、端口号相同</p> <h2 id="如何解决跨域"><a href="#如何解决跨域" class="header-anchor">#</a> 如何解决跨域</h2> <p>jsonp 跨域
+document.domain + iframe 跨域
+nodejs 中间件代理跨域
+后端在头部信息里面设置安全域名</p> <h2 id="严格模式的限制"><a href="#严格模式的限制" class="header-anchor">#</a> 严格模式的限制</h2> <p>变量必须声明后再使用
+函数的参数不能有同名属性，否则报错
+不能使用 with 语句
+禁止 this 指向全局对象</p> <h2 id="es6-新增"><a href="#es6-新增" class="header-anchor">#</a> es6 新增</h2> <p>新增模板字符串
+箭头函数
+for-of（用来遍历数据—例如数组中的值。）
+ES6 将 Promise 对象纳入规范，提供了原生的 Promise 对象。
+增加了 let 和 const 命令，用来声明变量。
+还有就是引入 module 模块的概念</p> <h2 id="内存泄漏"><a href="#内存泄漏" class="header-anchor">#</a> 内存泄漏</h2> <p>定义：程序中己动态分配的堆内存由于某种原因程序未释放或无法释放引发的各种问题。
+js 中可能出现的内存泄漏情况：结果：变慢，崩溃，延迟大等
+js 中可能出现的内存泄漏原因
+全局变量
+dom 清空时，还存在引用
+定时器未清除
+子元素存在引起的内存泄露</p> <h2 id="js-垃圾回收机制是怎样的"><a href="#js-垃圾回收机制是怎样的" class="header-anchor">#</a> JS 垃圾回收机制是怎样的？</h2> <ol><li><p>概述
+js 的垃圾回收机制是为了防止内存泄漏（已经不需要的某一块内存还一直存在着），垃圾回收机制就是不停歇的寻找这些不再使用的变量，并且释放掉它所指向的内存。
+在 JS 中，JS 的执行环境会负责管理代码执行过程中使用的内存。</p></li> <li><p>变量的生命周期
+当一个变量的生命周期结束之后，它所指向的内存就会被释放。js 有两种变量，局部变量和全局变量，局部变量是在他当前的函数中产生作用，当该函数结束之后，该变量内存会被释放，全局变量的话会一直存在，直到浏览器关闭为止。</p></li> <li><p>js 垃圾回收方式
+有两种方式： 标记清除、引用计数</p></li></ol> <ul><li><strong>标记清除</strong>：大部分浏览器使用这种垃圾回收，当变量进入执行环境(声明变量）的时候，垃圾回收器将该变量进行了标记，当该变量离开环境的时候，将其再度标记，随之进行删除。</li> <li><strong>引用计数</strong>：这种方式常常会引起内存的泄露，主要存在于低版本的浏览器。它的机制就是跟踪某一个值得引用次数，当声明一个变量并且将一个引用类型赋值给变量得时候引用次数加 1，当这个变量指向其他一个时引用次数减 1，当为 0 时出发回收机制进行回收。</li></ul> <h2 id="堆栈溢出有什么区别-内存泄漏-那些操作会造成内存泄漏-怎么样防止内存泄漏"><a href="#堆栈溢出有什么区别-内存泄漏-那些操作会造成内存泄漏-怎么样防止内存泄漏" class="header-anchor">#</a> 堆栈溢出有什么区别？ 内存泄漏? 那些操作会造成内存泄漏？怎么样防止内存泄漏？</h2> <p>堆栈溢出：就是不顾堆栈中分配的局部数据块大小，向该数据块写入了过多的数据，导致数据越界，结果覆盖了别的数据。经常会在递归中发生。
+内存泄露是指：用动态存储分配函数内存空间，在使用完毕后未释放，导致一直占据该内存单元。直到程序结束。指任何对象在您不再拥有或需要它之后仍然存在。</p> <p>造成内存泄漏：
+setTimeout 的第一个参数使用字符串而非函数的话，会引发内存泄漏。
+闭包、控制台日志、循环（在两个对象彼此引用且彼此保留时，就会产生一个循环）
+防止内存泄露：
+1、不要动态绑定事件；
+2、不要在动态添加，或者会被动态移除的 dom 上绑事件，用事件冒泡在父容器监听事件；
+3、如果要违反上面的原则，必须提供 destroy 方法，保证移除 dom 后事件也被移除，这点可以参考 Backbone 的源代码，做的比较好；
+4、单例化，少创建 dom，少绑事件。</p> <h2 id="说说面向对象编程思想"><a href="#说说面向对象编程思想" class="header-anchor">#</a> 说说面向对象编程思想?</h2> <p>面向对象是基于万物皆对象这个哲学观点. 把一个对象抽象成类,具体上就是把一个对象的静态特征和动态特征抽象成属性和方法,也就是把一类事物的算法和数据结构封装在一个类之中,程序就是多个对象和互相之间的通信组成的.
+<strong>三大特性</strong>
+面向对象具有封装性,继承性,多态性。
+<strong>优点</strong></p> <ul><li>易维护、易扩展</li> <li>提高了大型程序的重用性和可维护性，降低重复工作量，缩短了开发周期</li></ul> <p>封装:隐蔽了对象内部不需要暴露的细节,使得内部细节的变动跟外界脱离,只依靠接口进行通信.封装性降低了编程的复杂性.
+通过继承,使得新建一个类变得容易,一个类从派生类那里获得其非私有的方法和公用属性的繁琐工作交给了编译器. 而 继承和实现接口和运行时的类型绑定机制 所产生的多态,使得不同的类所产生的对象能够对相同的消息作出不同的反应,极大地提高了代码的通用性.</p> <p>总之,面向对象的特性提高了大型程序的重用性和可维护性.</p> <p><strong>七大设计原则</strong></p> <ol><li><p>开闭原则
+一个软件实体，如类，模块和函数应该多外扩展开发，对内修改关闭
+即不修改原有代码的前提下给程序扩展功能，增加了程序的可扩展性。</p></li> <li><p>单一职责原则
+一个类只允许有一个职责，即只有一个导致该类变更的原因</p></li> <li><p>依赖倒置原则</p></li></ol> <p>依赖抽象而不是依赖实现，高层模块不能依赖底层模块
+即针对接口编程，而不是针对实现编程，通过抽象搭建框架，建立类与类的关联，以减少类间的耦合性。</p> <ol start="4"><li>接口分离原则</li></ol> <p>多个特定的客户端接口要好于一个通用性的总接口；
+避免用一个接口里面包含不同职责的方法，接口责任划分更加明确</p> <ol start="5"><li><p>迪米特法则
+一个对象应该对尽可能少的对象有接触，只接触那些真正需要接触的对象</p></li> <li><p>里氏替换原则
+所有引用基类的地方必须能透明地使用其子类的对象，而程序执行效果不变。可以检测继承使用的正确性。</p></li> <li><p>合成复用原则
+尽量使用合成/聚合的方式，而不是使用继承。</p></li></ol> <h2 id="什么是单线程-和异步的关系"><a href="#什么是单线程-和异步的关系" class="header-anchor">#</a> 什么是单线程，和异步的关系？</h2> <p>单线程 ：只有一个线程，只能做一件事
+原因 ： 避免 DOM 渲染的冲突
+浏览器需要渲染 DOM
+JS 可以修改 DOM 结构
+JS 执行的时候，浏览器 DOM 渲染会暂停
+两段 JS 也不能同时执行（都修改 DOM 就冲突了）
+webworker 支持多线程，但是不能访问 DOM
+解决方案 ：异步</p> <h2 id="逐进增强和优雅降级"><a href="#逐进增强和优雅降级" class="header-anchor">#</a> 逐进增强和优雅降级</h2> <p>逐进增强
+针对低版本浏览器进行构建页面，保证最基本的功能，然后再针对高版本浏览器进行效果、交互等改进和追加功能达到更好的用户体验。
+优雅降级
+一开始就构建完整的功能，然后再针对低版本浏览器进行兼容</p> <h2 id="堆和栈存储机制有什么区别"><a href="#堆和栈存储机制有什么区别" class="header-anchor">#</a> 堆和栈存储机制有什么区别</h2> <p>堆 是一种非连续的树形储存数据结构，每个节点有一个值，整棵树是经过排序的。特点是根结点的值最小（或最大），且根结点的两个子树也是一个堆。常用来实现优先队列，存取随意。
+栈 是一种连续储存的数据结构，具有先进后出的性质。
+通常的操作有入栈（压栈），出栈和栈顶元素。想要读取栈中的某个元素，就是将其之间的所有元素出栈才能完成。</p> <h2 id="防抖和节流"><a href="#防抖和节流" class="header-anchor">#</a> 防抖和节流</h2> <p><strong>防抖</strong>：所谓防抖，就是指触发事件后在 n 秒内函数只能执行一次，如果在 n 秒内又触发了事件，则会重新计算函数执行时间。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * 1.触发事件
+ * 2.setTimeout
+ * 3.clearTimeout
+ * 4.this的指向
+ *
+ */</span>
+<span class="token keyword">function</span> <span class="token function">debounce</span><span class="token punctuation">(</span><span class="token parameter">fn<span class="token punctuation">,</span> delay</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> timer<span class="token punctuation">;</span>
+  <span class="token keyword">return</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> me <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
+    timer <span class="token operator">&amp;&amp;</span> <span class="token function">clearInterval</span><span class="token punctuation">(</span>timer<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    timer <span class="token operator">=</span> <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token function">fn</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>me<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> delay<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>节流</strong>：所谓节流，就是指连续触发事件但是在 n 秒中只执行一次函数。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">throttle</span><span class="token punctuation">(</span><span class="token parameter">fn<span class="token punctuation">,</span> delay</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> timer<span class="token punctuation">;</span>
+  <span class="token keyword">return</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>timer<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">let</span> me <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> _arg <span class="token operator">=</span> arguments<span class="token punctuation">;</span>
+    timer <span class="token operator">=</span> <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token function">fn</span><span class="token punctuation">.</span><span class="token function">apply</span><span class="token punctuation">(</span>me<span class="token punctuation">,</span> _arg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      timer <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> delay<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="arguments-的对象是什么"><a href="#arguments-的对象是什么" class="header-anchor">#</a> arguments 的对象是什么？</h2> <p>arguments 当我们不知道有多少个参数传进来的时候就用 arguments 来接收，是一个类似于数组的对象，他有 length 属性，可以 arguments[ i ]来访问对象中的元素， 但是它不能用数组的一些方法。 例如 push、pop、slice 等。arguments 虽然不是一个数组，但是它可以转成一个真正的数组。取之可以用 展开运算符来 数组和类数组类数组： ① 拥有 length 属性，其它属性(索引)为非负整数；箭头函数里没有 arguments ② 不具有数组所具有的方法； ③ 类数组是一个普通对象，而真实的数组是 Array 类型。</p> <h2 id="柯里化函数"><a href="#柯里化函数" class="header-anchor">#</a> 柯里化函数</h2> <p>柯里化函数：把一个多参数的函数转化为单参数函数的方法。并且返回接受余下的参数而且返回结果的新函数的技术。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 简单的相加函数</span>
+<span class="token keyword">let</span> <span class="token function-variable function">add</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">x<span class="token punctuation">,</span> y</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> x <span class="token operator">+</span> y<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token comment">// 调用：</span>
+<span class="token function">add</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 柯里化以后</span>
+<span class="token keyword">let</span> <span class="token function-variable function">add2</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">x</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">//柯里化函数(闭包)</span>
+  <span class="token keyword">return</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">y</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> x <span class="token operator">+</span> y<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token function">add2</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="new-的原理"><a href="#new-的原理" class="header-anchor">#</a> new 的原理</h2> <p>new 实际上是在堆内存中开辟一个空间。</p> <ul><li>① 创建一个空对象，构造函数中的 this 指向这个空对象；</li> <li>② 这个新对象被执行[ [ 原型 ] ]连接；</li> <li>③ 执行构造函数方法，属性和方法被添加到 this 引用的对象中；</li> <li>④ 如果构造函数中没有返回其它对象，那么返回 this，即创建的这个的新对象，否则，返回构造函数中返回的对象。</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">_new</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> target <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span> <span class="token comment">//创建的新对象</span>
+  <span class="token keyword">let</span> <span class="token punctuation">[</span>constructor<span class="token punctuation">,</span> <span class="token operator">...</span>args<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token operator">...</span>arguments<span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token comment">//执行[[原型]]连接,target是constructor的实例</span>
+  target<span class="token punctuation">.</span>__proto__ <span class="token operator">=</span> constructor<span class="token punctuation">.</span>prototype<span class="token punctuation">;</span>
+  <span class="token comment">//执行构造函数,将属性或方法添加到创建的空对象上</span>
+  <span class="token keyword">let</span> result <span class="token operator">=</span> constructor<span class="token punctuation">.</span>prototype<span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>result <span class="token operator">&amp;&amp;</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> result <span class="token operator">==</span> <span class="token string">&quot;object&quot;</span> <span class="token operator">||</span> <span class="token keyword">typeof</span> result <span class="token operator">==</span> <span class="token string">&quot;function&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">//如果构造函数执行的结构返回的是一个对象,那么返回这个对象</span>
+    <span class="token keyword">return</span> result<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment">//如果构造函数返回的不是一个对象,返回创建的对象</span>
+  <span class="token keyword">return</span> target<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="谈谈你对-js-eventloop-事件循环-的理解"><a href="#谈谈你对-js-eventloop-事件循环-的理解" class="header-anchor">#</a> 谈谈你对 JS eventloop(事件循环)的理解</h2> <p>浏览器内核是多线程，JavaScript 是单线程；</p> <p>JS 单线程详解：因为 js 是面向客户端的一门语言，主要是用户交互，操作 dom，渲染数据。试想一下。
+如果是多线程，我们在一个线程删除了一个 dom 节点，另外一个线程添加了一个 dom 节点，以那个线程为主呢，
+就会出现混乱的情况。当然你可以说我们在操作一个 dom 之后加上锁，只允许一个线程操作，这样其实增加了程序的复杂度，
+并不是一个好办法。
+单线程产生的问题：必须要等待前一个程序执行完毕才执行下一个，所以将程序分为了两类：同步任务和异步任务。</p> <p>异步任务又可以分为宏任务和微任务。</p> <p>栈：先进后出的数据结构，存储基本数据类型的变量。
+堆：主要负责引用数据类型的存储。</p> <p>任务队列：为什么会有任务队列呢，还是因为 javascript 单线程的原因，单线程，就意味着一个任务一个任务的执行，
+执行完当前任务，执行下一个任务，这样也会遇到一个问题，就比如说，要向服务端通信，加载大量数据，如果是同步执行，
+js 主线程就得等着这个通信完成，然后才能渲染数据，为了高效率的利用 cpu, 就有了同步任务和异步任务之分。
+同步任务： 指的是在主线程上排队执行的任务，只有前一个任务执行完毕，才能执行后一个任务。</p> <p>异步任务： 指的是不进入主线程，某个异步任务可以执行了，该任务才会进入主线程执行。</p> <p>微任务：
+promise 的回调、node 中的 process.nextTick 、对 Dom 变化监听的 MutationObserver。</p> <p>宏任务：
+script 脚本的执行、setTimeout ，setInterval ，setImmediate 一类的定时事件，还有如 I/O 操作、UI 渲染等。</p> <p>setTimeout(function() {
+console.log(1)
+}, 0);
+new Promise(function(resolve, reject) {
+console.log(2);
+resolve()
+}).then(function() {
+console.log(3)
+});
+process.nextTick(function () {
+console.log(4)
+})
+console.log(5)
+// 2
+// 5
+// 3
+// 4
+// 1</p> <h2 id="如何让-a-1-a-2-a-3-的值为-true"><a href="#如何让-a-1-a-2-a-3-的值为-true" class="header-anchor">#</a> 如何让(a == 1 &amp;&amp; a == 2 &amp;&amp; a == 3)的值为 true？</h2> <p>// &quot; == &quot;操作符在左右数据不一致的时候，会先进行隐式转换，该值意味着不是基本数据类型，
+// 因为如果 a 是 null 或者 undefined、bool 类型都不可能返回 true；可以推测 a 是复杂数据类型。</p> <p>// 方法一：数组的 toString 接口默认调用数组的 join 方法，重新 join 方法
+let a = [1, 2, 3];
+a.join = a.shift;
+console.log(a == 1 &amp;&amp; a == 2 &amp;&amp; a == 3) //true</p> <p>// 方法二：利用数据劫持(Proxy/Object.definedProperty)
+let i = 1;
+let a = new Proxy({},{
+i:1,
+get:function(){
+return () =&gt; this.i++
+}
+});
+console.log(a == 1 &amp;&amp; a == 2 &amp;&amp; a == 3); // true</p> <h2 id="为什么-0-1-0-2-0-3-如何让其相等"><a href="#为什么-0-1-0-2-0-3-如何让其相等" class="header-anchor">#</a> 为什么 0.1 + 0.2 !== 0.3，如何让其相等</h2> <p>// 在开发过程中遇到类似这样的问题：
+let n1 = 0.1;
+let n2 = 0.2;
+console.log(n1 + n2) // 0.30000000000000004</p> <p>/**</p> <ul><li>使用浮点数进行计算逻辑处理时，不注意，就可能出现问题</li> <li>记住，永远不要直接比较俩个浮点的大小</li> <li>这个属于数字运算中的精度缺失的问题</li> <li>在 0.1 + 0.2 这个式子中，0.1 和 0.2 都是近似表示的，在他们相加的时候，两个近似值进行了计算，导致最后得到的值是 0.30000000000000004
+*/
+// 简单粗暴的方式
+parseFloat((0.1 + 0.2).toFixed(10)) === 0.3</li></ul> <h2 id="for-in-迭代和-for-of-有什么区别"><a href="#for-in-迭代和-for-of-有什么区别" class="header-anchor">#</a> for...in 迭代和 for...of 有什么区别</h2> <ol><li>推荐在循环对象属性的时候，使用 for...in，在遍历数组的时候的时候使用 for...of。</li> <li>for in 遍历的是数组的索引，而 for of 遍历的是数组元素值</li> <li>for...of 不能循环普通的对象，需要通过和 Object.keys()搭配使用</li> <li>for...in 便利顺序以数字为先 无法便利 symbol 属性 可以便利到公有中可枚举的</li> <li>从遍历对象的角度来说，for···in 会遍历出来的为对象的 key，但 for···of 会直接报错。</li></ol> <h2 id="谈谈你对-promise、generator、async-await-理解"><a href="#谈谈你对-promise、generator、async-await-理解" class="header-anchor">#</a> 谈谈你对 promise、Generator、async/await 理解</h2> <p>promise 和 async/await 是专门用于处理异步操作的</p> <p>Generator 并不是为异步而设计出来的，它还有其他功能（对象迭代、控制输出、部署 Interator 接口…）</p> <p>promise 编写代码相比 Generator、async 更为复杂化，且可读性也稍差</p> <p>Generator、async 需要与 promise 对象搭配处理异步情况</p> <p>async 实质是 Generator 的语法糖，相当于会自动执行 Generator 函数</p> <p>async 使用上更为简洁，将异步代码以同步的形式进行编写，是处理异步编程的最终方案</p> <h2 id="谈谈你对模块化开发的理解"><a href="#谈谈你对模块化开发的理解" class="header-anchor">#</a> 谈谈你对模块化开发的理解？</h2> <p>我对模块的理解是，一个模块是实现一个特定功能的一组方法。在最开始的时候，js 只实现一些简单的功能，
+所以并没有模块的概念，但随着程序越来越复杂，代码的模块化开发变得越来越重要。</p> <p>由于函数具有独立作用域的特点，最原始的写法是使用函数来作为模块，几个函数作为一个模块，但是这种方式容易造成全局变量的污染，并且模块间没有联系。</p> <p>对象写法，通过将函数作为一个对象的方法来实现，这样解决了直接使用函数作为模块的一些缺点，但是这种办法会暴露所有的模块成员，外部代码可以修改内部属性的值。</p> <p>现在最常用的是立即执行函数的写法，通过利用闭包来实现模块私有作用域的建立，同时不会对全局作用域造成污染。</p> <h2 id="js-的几种模块规范"><a href="#js-的几种模块规范" class="header-anchor">#</a> js 的几种模块规范？</h2> <p>js 中现在比较成熟的有四种模块加载方案：</p> <ol><li><p><strong>CommonJS</strong> 方案，它通过 require 来引入模块，通过 module.exports 定义模块的输出接口。这种模块加载方案是服务器端的解决方案，它是以同步的方式来引入模块的，因为在服务端文件都存储在本地磁盘，所以读取非常快，所以以同步的方式加载没有问题。但如果是在浏览器端，由于模块的加载是使用网络请求，因此使用异步加载的方式更加合适。</p></li> <li><p><strong>AMD</strong> 方案，这种方案采用异步加载的方式来加载模块，模块的加载不影响后面语句的执行，所有依赖这个模块的语句都定义在一个回调函数里，等到加载完成后再执行回调函数。require.js 实现了 AMD 规范。</p></li> <li><p><strong>CMD</strong> 方案，这种方案和 AMD 方案都是为了解决异步模块加载的问题，sea.js 实现了 CMD 规范。它和 require.js 的区别在于模块定义时对依赖的处理不同和对依赖模块的执行时机的处理不同。
+<strong>AMD 与 CDM 的区别：</strong>
+（1）对于于依赖的模块，AMD 是提前执行(好像现在也可以延迟执行了)，CMD 是延迟执行。
+（2）AMD 推崇依赖前置，CMD 推崇依赖就近。
+（3）AMD 推崇复用接口，CMD 推崇单用接口。
+（4）书写规范的差异。</p></li> <li><p><strong>ES6</strong> 使用 import 和 export 的形式来导入导出模块。</p></li></ol> <h2 id="require-与-import-的区别和使用"><a href="#require-与-import-的区别和使用" class="header-anchor">#</a> require 与 import 的区别和使用</h2> <p>1、import 是 ES6 中的语法标准也是用来加载模块文件的，import 函数可以读取并执行一个 JavaScript 文件，然后返回该模块的 export 命令指定输出的代码。export 与 export default 均可用于导出常量、函数、文件、模块，export 可以有多个，export default 只能有一个。</p> <p>2、require 定义模块：module 变量代表当前模块，它的 exports 属性是对外的接口。通过 exports 可以将模块从模块中导出，其他文件加载该模块实际上就是读取 module.exports 变量，他们可以是变量、函数、对象等。在 node 中如果用 exports 进行导出的话系统会系统帮您转成 module.exports 的，只是导出需要定义导出名。</p> <p><strong>require 与 import 的区别</strong></p> <ol><li>require 是 CommonJS 规范的模块化语法，import 是 ECMAScript 6 规范的模块化语法；</li> <li>require 是运行时加载，import 是编译时加载；</li> <li>require 可以写在代码的任意位置，import 只能写在文件的最顶端且不可在条件语句或函数作用域中使用；</li> <li>require 通过 module.exports 导出的值就不能再变化，import 通过 export 导出的值可以改变；</li> <li>require 通过 module.exports 导出的是 exports 对象，import 通过 export 导出是指定输出的代码；</li> <li>require 运行时才引入模块的属性所以性能相对较低，import 编译时引入模块的属性所以性能稍高。</li></ol> <h2 id="js-延迟加载的方式有哪些"><a href="#js-延迟加载的方式有哪些" class="header-anchor">#</a> js 延迟加载的方式有哪些？</h2> <p>defer 和 async、动态创建 DOM 方式（用得最多）、按需异步载入 js</p> <h2 id="说说异步编程的实现方式"><a href="#说说异步编程的实现方式" class="header-anchor">#</a> 说说异步编程的实现方式?</h2> <p><strong>回调函数（callbacks）</strong>
+优点：简单、容易理解
+缺点：不利于维护、代码耦合高，，流程会很混乱，而且每个任务只能指定一个回调函数。</p> <p><strong>事件监听</strong>
+优点：可以绑定多个事件，每个事件可以指定多个回调函数，有利于实现模块化
+缺点：整个程序都要变成事件驱动型，运行流程会变得很不清晰。</p> <p>发布/订阅(观察者模式)
+类似于事件监听，但是可以通过‘消息中心’，了解现在有多少发布者，多少订阅者</p> <p><strong>Promise 对象</strong>
+它的思想是，每一个异步任务返回一个 Promise 对象，该对象有一个 then 方法，允许指定回调函数。
+优点：可以利用 then 方法，进行链式写法；可以书写错误时的回调函数
+缺点：编写和理解，相对比较难</p> <p><strong>Generator 函数</strong>
+优点：函数体内外的数据交换、错误处理机制
+缺点：流程管理不方便</p> <p><strong>async 函数</strong>
+优点：内置执行器、更好的语义、更广的适用性、返回的是 Promise、结构清晰
+缺点：错误处理机制</p> <h2 id="如何清除一个定时器"><a href="#如何清除一个定时器" class="header-anchor">#</a> 如何清除一个定时器?</h2> <p>window.clearInterval();
+window.clearTimeout();</p> <h2 id="事件委托-有什么好处"><a href="#事件委托-有什么好处" class="header-anchor">#</a> 事件委托？有什么好处?</h2> <p>事件委托也叫事件代理，“事件代理”即是把原本需要绑定在子元素的响应事件（click、keydown…）委托给父元素，让父元素担当事件监听的职务。事件代理的原理是 DOM 元素的事件冒泡。</p> <p>可以大量节省内存占用，减少事件注册，比如在 ul 上代理所有 li 的 click 事件。
+可以实现当新增子对象时无需再次对其绑定（动态绑定事件）</p> <h2 id="gc-机制是什么-为什么闭包不会被回收变量和函数"><a href="#gc-机制是什么-为什么闭包不会被回收变量和函数" class="header-anchor">#</a> Gc 机制是什么？为什么闭包不会被回收变量和函数？</h2> <p>1、Gc 垃圾回收机制;
+2、外部变量没释放，所以指向的大函数内的小函数也释放不了</p> <h2 id="promise"><a href="#promise" class="header-anchor">#</a> promise</h2> <p>Promise 的构造函数接收一个参数，是函数，并且传入两个参数：resolve，reject，分别表示异步操作执行成功后的回调函数和异步操作执行失败后的回调函数。</p> <h2 id="如何创建一个对象"><a href="#如何创建一个对象" class="header-anchor">#</a> 如何创建一个对象？</h2> <ol><li>工厂模式</li> <li>构造函数模式</li> <li>原型模式</li> <li>混合构造函数和原型模式</li> <li>动态原型模式</li> <li>寄生构造函数模式</li> <li>稳妥构造函数模式</li></ol> <p>程序的设计模式?工厂模式?发布订阅?
+1）设计模式并不是某种语言的某块代码，设计模式是一种思想，提供给在编码时候遇到的各种问题是可以采取的解决方案，更倾向于一种逻辑思维，而不是万能代码块。
+设计模式主要分三个类型:创建型、结构型和行为型。
+创建型模式：单例模式，抽象工厂模式，建造者模式，工厂模式与原型模式。
+结构型模式：适配器模式，桥接模式，装饰者模式，组合模式，外观模式，享元模式以及代理模式。
+行为型模式：模板方法模式，命令模式，迭代器模式，观察者模式，中介者模式，备忘录模式，解释器模式，状态模式，策略模式，职责链模式和访问者模式。</p> <p>2）与创建型模式类似，工厂模式创建对象（视为工厂里的产品）是无需指定创建对象的具体类。
+工厂模式定义一个用于创建对象的接口，这个接口由子类决定实例化哪一个类。该模式使一个类的实例化延迟到了子类。而子类可以重写接口方法以便创建的时候指定自己的对象类型。</p> <p>3）观察者模式又叫做发布订阅模式，它定义了一种一对多的关系，让多个观察者对象同时监听某一个主题对象，这个主题对象的状态发生改变时就会通知所有观察着对象。它是由两类对象组成，主题和观察者，主题负责发布事件，同时观察者通过订阅这些事件来观察该主体，发布者和订阅者是完全解耦的，彼此不知道对方的存在，两者仅仅共享一个自定义事件的名称。
+( 设计模式实在是太高深了，小伙伴门结合网上实例自行学习，我实在是无能为力啊 )</p> <h2 id="js-的几种继承方式"><a href="#js-的几种继承方式" class="header-anchor">#</a> js 的几种继承方式？</h2> <p>1.使用对象冒充实现继承 2.采用 call、Apply 方法改变函数上下文实现继承 3.原型链方式继承</p> <h2 id="作用域链"><a href="#作用域链" class="header-anchor">#</a> 作用域链？</h2> <p>作用域链可以理解为一组对象列表，包含 父级和自身的变量对象，因此我们便能通过作用域链访问到父级里声明的变量或者函数</p> <p>因为函数的嵌套形成作用域的层级关系。当函数执行时，从当前作用域开始搜，没有找到的变量，会向上层作用域查找，直至全局函数，这就是作用域链。</p> <p>• 在 JavaScript 中，作用域为 function(){}内的区域，称为函数作用域。</p> <p>• 全局函数无法查看局部函数的内部细节，但局部函数可以查看其上层的函数细节，直至全局细节</p> <h2 id="闭包"><a href="#闭包" class="header-anchor">#</a> 闭包</h2> <p>闭包：就是能够读取其他函数内部变量的函数。</p> <p>闭包基本上就是一个函数内部返回一个函数</p> <h2 id="什么是原型、原型链、继承"><a href="#什么是原型、原型链、继承" class="header-anchor">#</a> 什么是原型、原型链、继承？</h2> <p>所有的函数都有 prototype 属性（原型）
+所有的对象都有 proto 属性
+在 Javascript 中，每个函数都有一个原型属性 prototype 指向自身的原型，而由这个函数创建的对象也有一个 proto 属性指向这个原型，而函数的原型是一个对象，所以这个对象也会有一个 proto 指向自己的原型，这样逐层深入直到 Object 对象的原型，这样就形成了原型链。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/notes/JS/array.html">
+        JS数组
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.d11e3cee.js" defer></script><script src="/assets/js/2.15dfde48.js" defer></script><script src="/assets/js/27.e7eaf9dc.js" defer></script>
+  </body>
+</html>
